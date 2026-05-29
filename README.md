@@ -1,57 +1,111 @@
-# Projeto 1: Excesso de mortes por COVID-19 na América Latina <br><br>
+# Excesso de Mortes por COVID-19 na América Latina
 
-## Objetivos de aprendizagem: <br>
-🎯 Manipular dados em planilhas <br>
-🎯 Classificar dados e extrair informações usando planilhas <br>
-🎯 Organizar os dados em tabelas <br>
-🎯 Visualizar dados em planilhas <br> 
-🎯 Usar gráficos básicos para resumir as informações <br>
-🎯 Organizar e comunicar as descobertas <br>
-🎯 Desenvolver estratégias para aprender e desenvolver habilidades de forma independente <br>
-   
-## Ferramentas utilizadas: <br>
-![Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)
+> **Pergunta central:** Os números oficiais de mortes por COVID-19 
+> refletem a realidade? Uma análise comparativa entre mortes 
+> reportadas e mortes estimadas em excesso em 5 países latino-americanos.
 
-## Relatório de Análise: <br>
-📈 <a href="https://docs.google.com/spreadsheets/d/18Mz6EnlOcX9wgjZmxvYyXZtgOg3EWn_IRkD6BbRFAWI/edit?usp=sharing">Relatório Sheets</a> 
+---
 
-## Vìdeo de Apresentação dos Resultados: <br>
-📹 <a href="https://www.loom.com/share/260b1c897b2b43a2a8327386bf373483">Vídeo</a> <br>
+## O Problema
 
-## Objetivo da Análise:
-🎯 Calcular o excesso de mortes em tempos de pandemia, para poder compará-los com os números oficiais informados pelos 5 países da América Latina com o objetivo de descobrir se o número de mortes por COVID é semelhante aos seus cálculos.
+Durante a pandemia de COVID-19, governos da América Latina reportaram 
+oficialmente seus números de mortalidade — mas especialistas em saúde 
+pública alertavam que esses dados podiam estar subestimados.
 
-## Etapas: <br>
-1️⃣Revise o dataset e a estrutura dos dados <br>
-2️⃣Compreensão do dataset <br>
-3️⃣Criação de uma cópia do banco de dados (função IMPORTRANGE) <br>
-4️⃣Análise das mortes por país: <br>
----> Cálculo do número total de mortes por COVID por 100.000 habitantes <br> 
----> Cálculo do número total de mortes por COVID por 100.000 habitantes | funções QUERY e VLOOKUP <br>
----> Cálculo do total acumulado de mortes por COVID por 100.000 habitantes <br>
----> Cálculo do prognóstico de mortes usando médias simples | funções AVERAGEIFS e IFERROR <br>
----> Cálculo do excesso de mortes por COVID<br>
----> Cálculo do excesso de mortes por COVID por 100.000 habitantes <br>
----> Cálculo do excesso de mortes acumuladas por COVID por 100.000 habitantes 
+O **excesso de mortalidade** é uma métrica usada por epidemiologistas 
+e organismos internacionais (OMS, IHME) para estimar o impacto real 
+de uma crise sanitária: compara o total de mortes observadas com o 
+que seria esperado em condições normais.
 
-## Entregas e Conclusões: <br>
+Essa diferença importa. Ela afeta decisões sobre alocação de recursos, 
+políticas de saúde e a narrativa histórica sobre a pandemia.
 
-<img src="https://github.com/sthefcruz18/excesso-de-mortes-por-COVID19_IBM-LABORATORIA_P1/blob/6f22a396e2f43823986d7d5821130e9d5e49e96e/visaoGeral.png"/><br>
+---
 
-<img src="https://github.com/sthefcruz18/excesso-de-mortes-por-COVID19_IBM-LABORATORIA_P1/blob/6f22a396e2f43823986d7d5821130e9d5e49e96e/comparacaoMortesMortesAcumul.png" /><br>
+## O que este projeto analisa
 
-📝 **1. Considerando os números para cada 100.000 habitantes em que país existe uma maior diferença entre as mortes oficiais relatadas pela COVID e as mortes estimadas em excesso?**	R. _Mexico_ <br><br>
-📝 **2. Considerando os números para cada 100.000 habitantes em que país existe uma menor diferença entre as mortes oficiais relatadas pela COVID e as mortes estimadas em excesso?**	R. _Chile_ <br><br>
-📝**3. Considerando os números para cada 100.000 habitantes qual é o país com o maior número de mortes em excesso?** R. _Peru_ <br>
+Comparação entre mortes oficialmente atribuídas ao COVID-19 e o 
+excesso de mortalidade estimado nos 5 países da América Latina com 
+maior número de casos, com dados normalizados por 100.000 habitantes 
+para comparação justa entre países de tamanhos diferentes.
 
-<img src="https://github.com/sthefcruz18/excesso-de-mortes-por-COVID19_IBM-LABORATORIA_P1/blob/fb32baba77f9bea3641ab9239443fa6529a38245/tabelaComparativa.png"/><br>
+**Países analisados:** Brasil, México, Peru, Colômbia e Chile  
+**Período:** 2020–2021  
+**Ferramenta:** Google Sheets (funções QUERY, VLOOKUP, AVERAGEIFS)
 
-<img src="https://github.com/sthefcruz18/excesso-de-mortes-por-COVID19_IBM-LABORATORIA_P1/blob/6f22a396e2f43823986d7d5821130e9d5e49e96e/mortes_ao_longo_tempo.png"/><br>
-          
-## Dataset:
-💻 Os dados são públicos e fictícios. <br>
-💻 Podem ser escontrados <a href="https://docs.google.com/spreadsheets/d/1qs64yg3caddAEvkwbZDeEmZNDwba-IIvR-KuUQhuC1k/edit?usp=sharing">clicando aqui</a> <br>
+> ⚠️ Os dados utilizados são fictícios e foram fornecidos para fins 
+> educacionais no contexto da certificação IBM + Laboratória.
+> A metodologia aplicada replica abordagens reais usadas em análises 
+> epidemiológicas.
 
-<img src="https://github.com/sthefcruz18/excesso-de-mortes-por-COVID19_IBM-LABORATORIA_P1/blob/6f22a396e2f43823986d7d5821130e9d5e49e96e/DataSet.png" /> 
+---
 
+## Principais Achados
 
+| País | Mortes oficiais (por 100k) | Excesso estimado (por 100k) | Diferença |
+|------|---------------------------|----------------------------|-----------|
+| México | menor | maior | **maior gap** |
+| Chile | próximos | próximos | **menor gap** |
+| Peru | — | — | **maior número absoluto** |
+
+📊 O México apresentou a maior discrepância entre dados oficiais e 
+excesso estimado — sugerindo possível subnotificação.  
+📊 O Chile teve os dados mais alinhados, indicando maior capacidade 
+de registro.  
+📊 O Peru registrou o maior número de mortes em excesso por habitante 
+entre os países analisados.
+
+---
+
+## Visualizações
+
+**Visão geral do dataset**  
+![Visão Geral](visaoGeral.png)
+
+**Comparação: mortes oficiais vs. mortes acumuladas**  
+![Comparação](comparacaoMortesMortesAcumul.png)
+
+**Tabela comparativa por país**  
+![Tabela](tabelaComparativa.png)
+
+**Evolução temporal das mortes**  
+![Série temporal](mortes_ao_longo_tempo.png)
+
+---
+
+## Metodologia
+
+1. Revisão e compreensão do dataset
+2. Importação e espelhamento de dados (`IMPORTRANGE`)
+3. Cálculo de mortes por 100.000 habitantes (`QUERY` + `VLOOKUP`)
+4. Cálculo do total acumulado por país
+5. Estimativa de mortes esperadas via média histórica (`AVERAGEIFS`)
+6. Cálculo do excesso: mortes observadas − mortes esperadas
+7. Normalização por habitante para comparação entre países
+
+---
+
+## Acesse o projeto completo
+
+📈 [Planilha de análise (Google Sheets)](https://docs.google.com/spreadsheets/d/18Mz6EnlOcX9wgjZmxvYyXZtgOg3EWn_IRkD6BbRFAWI/edit?usp=sharing)  
+📹 [Vídeo de apresentação dos resultados (Loom)](https://www.loom.com/share/260b1c897b2b43a2a8327386bf373483)
+
+---
+
+## Contexto
+
+Projeto desenvolvido como parte da **Certificação em Análise de Dados 
+IBM + Laboratória** (200h), programa de formação de mulheres em 
+tecnologia e dados na América Latina.
+
+---
+
+## Sobre a autora
+
+Analista de dados com atuação na gestão pública educacional (SED/MS) 
+e formação em Ciência de Dados (UFMS) e MBA em Data Science (USP/ESALQ). 
+Foco em dados aplicados a políticas públicas.
+
+🔗 [LinkedIn](https://www.linkedin.com/in/sthefcruz18/) | 
+[Portfólio](https://bit.ly/sthefcruz18) | 
+[GitHub](https://github.com/sthefcruz18)
